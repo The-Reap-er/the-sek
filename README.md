@@ -1,5 +1,5 @@
 # The-SEK
-## Welcome To The Shinigami Exploit Kit
+## 💀 Welcome To The Shinigami Exploit Kit 💀
 ```
 =========================================================================
 [THE-SEK] Shinigami Exploit Kit
