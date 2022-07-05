@@ -1,2 +1,2 @@
-# the-sek
+# The-SEK
 The Shinigami Exploit Kit
