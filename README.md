@@ -40,13 +40,13 @@
       
 
       
-                   13 Diffrent Types Of Malware
+                   11 Diffrent Types Of Malware
                    0 Diffrent Types Of Ransomware [ToDo]
                    0 Diffrent Types Of Rootkits [ToDO]
-                   2 Diffrent Type Of Powershell Scripts
+                   3 Diffrent Type Of Powershell Scripts
 
 ```
-The SEK is an Exploit Kit written by shinigami for learning about malware's and other malicious softwares in The SEK youll find a bunch of diffrent types of malware's to use in your red team operation with AV Evasion Of course all the malware currently work and bypass diffrent types of AV's but in time and after use of public it will be blocked at some poit and will be on your imagination ad useing the Custom Malware module to Bypass Them. This Tool is both a learning ground in diffrent types of shellcode injection and great for red teamers to use it in their operation all of the malwares work with diffrent types of c2 server like cobalt strike, empire, metasploit ... So Have Fun While You can
+The SEK is an Exploit Kit written by shinigami for learning about malware's and other malicious softwares in The SEK youll find a bunch of diffrent types of malware's to use in your red team operation withou AV Evasion for security reasons Custom Malware module While help you Bypass Them ;D. This Tool is both a learning ground in diffrent types of shellcode injection and great for red teamers to use it in their operation all of the malwares work with diffrent types of c2 server like cobalt strike, empire, metasploit ... So Have Fun While You can
 
 ### Instalation
 1 - Clone The Repo
